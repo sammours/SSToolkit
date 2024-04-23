@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>SSToolkit.Mail for Mailing</Description>
+        <PackageProjectUrl>https://github.com/samysammour/SSToolkit/tree/master/Fundamental/SSToolkit.Fundamental</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/samysammour/SSToolkit/tree/master/Fundamental/SSToolkit.Fundamental</RepositoryUrl>
+        <PackageTags>Mail;Email;SMTP;MailClient</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <AssemblyName>SSToolkit.Mail</AssemblyName>
+        <RootNamespace>SSToolkit.Mail</RootNamespace>
+    </PropertyGroup>
+
+
+
+    <ItemGroup>
+         <Compile Include="..\..\..\CentralGlobalSuppressions.cs" Link="CentralGlobalSuppressions.cs" />                    
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="Microsoft.CodeAnalysis.CSharp" Version="4.6.0" />
+    </ItemGroup>
+</Project>

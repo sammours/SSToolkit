@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>SSToolkit.Domain.Repositories for generic Repositories with Specification pattern. Suitable for DDD or other DIY principles</Description>
+        <PackageProjectUrl>https://github.com/samysammour/SSToolkit/tree/master/Domain.Repositories/SSToolkit.Domain.Repositories</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/samysammour/SSToolkit/tree/master/Domain.Repositories/SSToolkit.Domain.Repositories</RepositoryUrl>
+        <PackageTags>Specification;Specifications;Repository;Repositories;GenericRepository;FindOptions;DDD;DIY;</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <AssemblyName>SSToolkit.Domain.Repositories</AssemblyName>
+        <RootNamespace>SSToolkit.Domain.Repositories</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="..\..\..\CentralGlobalSuppressions.cs" Link="CentralGlobalSuppressions.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\1. Fundamental\SSToolkit.Fundamental\SSToolkit.Fundamental.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="Microsoft.CodeAnalysis.CSharp" Version="4.6.0" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>SSToolkit.Domain.EventSourcing for Domain Events. Suitable for DDD or other Event sourcing</Description>
+        <PackageProjectUrl>https://github.com/samysammour/SSToolkit/tree/master/Domain.EventSourcing/SSToolkit.Domain.EventSourcing</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/samysammour/SSToolkit/tree/master/Domain.EventSourcing/SSToolkit.Domain.EventSourcing</RepositoryUrl>
+        <PackageTags>EventSourcing;Aggregates;Event histories;Events;DDD Events;</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <AssemblyName>SSToolkit.Domain.EventSourcing</AssemblyName>
+        <RootNamespace>SSToolkit.Domain.EventSourcing</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+             <Compile Include="..\..\..\CentralGlobalSuppressions.cs" Link="CentralGlobalSuppressions.cs" />                    
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="System.Text.Json" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="Microsoft.CodeAnalysis.CSharp" Version="4.6.0" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>SSToolkit.Infrastructure.Azure.CosmosDb for CosmosDb Repository</Description>
+        <PackageProjectUrl>https://github.com/samysammour/SSToolkit/tree/master/Infrastructure.Azure.CosmosDb/SSToolkit.Infrastructure.Azure.CosmosDb</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/samysammour/SSToolkit/tree/master/Infrastructure.Azure.CosmosDb/SSToolkit.Infrastructure.Azure.CosmosDb</RepositoryUrl>
+        <PackageTags>CosmosDB;Generic Repositories;Specification pattern;</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <AssemblyName>SSToolkit.Infrastructure.Azure.CosmosDb</AssemblyName>
+        <RootNamespace>SSToolkit.Infrastructure.Azure.CosmosDb</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="..\..\..\CentralGlobalSuppressions.cs" Link="CentralGlobalSuppressions.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Remove="C:\Users\ssammour\.nuget\packages\microsoft.azure.cosmos\3.25.0\contentFiles\any\netstandard2.0\ThirdPartyNotice.txt" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.35.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\3. Domain\Domain.Repositories\SSToolkit.Domain.Repositories\SSToolkit.Domain.Repositories.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="Microsoft.CodeAnalysis.CSharp" Version="4.6.0" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>SSToolkit.Application.Commands.Core for CQRS Pattern. Suitable for DDD or CQRS</Description>
+        <PackageProjectUrl>https://github.com/samysammour/SSToolkit/tree/master/Application.Commands.Core/SSToolkit.Application.Commands.Core</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/samysammour/SSToolkit/tree/master/Application.Commands.Core/SSToolkit.Application.Commands.Core</RepositoryUrl>
+        <PackageTags>CQRS;Commands;Queries;Behaviours;Caching;</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <AssemblyName>SSToolkit.Application.Commands.Core</AssemblyName>
+        <RootNamespace>SSToolkit.Application.Commands.Core</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MediatR" Version="12.1.1" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="..\..\..\CentralGlobalSuppressions.cs" Link="CentralGlobalSuppressions.cs" />                    
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\1. Fundamental\SSToolkit.Fundamental\SSToolkit.Fundamental.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="Microsoft.CodeAnalysis.CSharp" Version="4.6.0" />
+    </ItemGroup>
+
+</Project>

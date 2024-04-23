@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+    </PropertyGroup>
+    <PropertyGroup>
+        <Description>SSToolkit.Infrastructure.EntityFrameworkCore for generic entity framework with Specification pattern. Suitable for DDD or other DIY principles</Description>
+        <PackageProjectUrl>https://github.com/samysammour/SSToolkit/tree/master/Infrastructure.EntityFrameworkCore/SSToolkit.Infrastructure.EntityFrameworkCore</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/samysammour/SSToolkit/tree/master/Infrastructure.EntityFrameworkCore/SSToolkit.Infrastructure.EntityFrameworkCore</RepositoryUrl>
+        <PackageTags>EntityFrameworkCore;EFCore;Repository;Repositories;GenericRepository;FindOptions;DDD;DIY;DbContext</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <AssemblyName>SSToolkit.Infrastructure.EntityFrameworkCore</AssemblyName>
+        <RootNamespace>SSToolkit.Infrastructure.EntityFrameworkCore</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.9">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.9" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="..\..\..\CentralGlobalSuppressions.cs" Link="CentralGlobalSuppressions.cs" />                    
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\1. Fundamental\SSToolkit.Fundamental\SSToolkit.Fundamental.csproj" />
+        <ProjectReference Include="..\..\..\3. Domain\Domain.Repositories\SSToolkit.Domain.Repositories\SSToolkit.Domain.Repositories.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="README.md">
+            <PackagePath>\</PackagePath>
+            <Pack>True</Pack>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="Microsoft.CodeAnalysis.CSharp" Version="4.6.0" />
+    </ItemGroup>
+
+</Project>

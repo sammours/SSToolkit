@@ -1,0 +1,47 @@
+﻿<Project> 
+      <PropertyGroup>
+          <TargetFramework>net6.0</TargetFramework>
+            <LangVersion>11</LangVersion>
+            <!--package-->
+            <Authors>Samy Sammour</Authors>
+            <Description>SSToolkit</Description>
+            <Copyright>Copyright 2023 (c). All rights reserved.</Copyright>
+          <RepositoryType>git</RepositoryType>
+          <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+          <PackageReleaseNotes>Publishing</PackageReleaseNotes>
+          <PublishRepositoryUrl>true</PublishRepositoryUrl>
+            <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+            <Nullable>enable</Nullable>
+            <ImplicitUsings>enable</ImplicitUsings>
+            <SourceRevisionId>build$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</SourceRevisionId>
+            <IncludeSymbols>false</IncludeSymbols>
+            <RestorePackagesWithLockFile>false</RestorePackagesWithLockFile>  
+            <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+      </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <WarningLevel>7</WarningLevel>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <WarningLevel>7</WarningLevel>
+    </PropertyGroup>
+
+      <PropertyGroup>
+            <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+            <WarningsAsErrors></WarningsAsErrors>
+            <CodeAnalysisRuleSet></CodeAnalysisRuleSet>
+            <UseSharedCompilation>true</UseSharedCompilation> <!--roslyn build speed-->
+      </PropertyGroup>
+
+      <ItemGroup> 
+            <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.0.1" >
+                  <PrivateAssets>all</PrivateAssets>
+            </PackageReference>
+            <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+                  <PrivateAssets>all</PrivateAssets>
+                  <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+            </PackageReference>
+      </ItemGroup>
+
+</Project>

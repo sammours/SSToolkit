@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+        <Description>SSToolkit.Fundamental for fundamentals</Description>
+        <PackageProjectUrl>https://github.com/samysammour/SSToolkit/tree/master/Fundamental/SSToolkit.Fundamental</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/samysammour/SSToolkit/tree/master/Fundamental/SSToolkit.Fundamental</RepositoryUrl>
+        <PackageTags>Fundamental;Extensions;Utilities;Abstractions</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <AssemblyName>SSToolkit.Fundamental</AssemblyName>
+        <RootNamespace>SSToolkit.Fundamental</RootNamespace>
+        <Nullable>disable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="..\..\CentralGlobalSuppressions.cs" Link="CentralGlobalSuppressions.cs" />        
+    </ItemGroup>
+
+	<ItemGroup>
+		<None Update="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Update="Microsoft.CodeAnalysis.CSharp" Version="4.6.0" />
+	</ItemGroup>
+
+</Project>
